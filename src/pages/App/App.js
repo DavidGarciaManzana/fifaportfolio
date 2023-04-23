@@ -1,13 +1,19 @@
 import React from "react"
 import styles from './App.module.css'
-import Head from 'next/head'
+import TopBar from '@/pages/TopBar/TopBar'
+import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
+import Head from "next/head";
 
-function App(){
+function App() {
+    const {t} = React.useContext(LanguageContext);
     return (
-        <div className={styles.appContainer}>
-            <Head><title>David personal portfolio</title></Head>
+        <>
+            <Head><title>{t?.title}</title></Head>
+            <div className={styles.appContainer}>
+                <TopBar></TopBar>
 
-        </div>
+            </div>
+        </>
     )
 }
 

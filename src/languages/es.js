@@ -1,3 +1,3 @@
 export default {
-    Hello:'Hola',
+    title:'Portafolio Personal de David',
 }
