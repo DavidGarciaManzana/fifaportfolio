@@ -1,9 +1,11 @@
 .topBar {
+    position: fixed;
     display: flex;
     height: 70px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    background-color: mintcream;
 }
 
 .leftButton {
