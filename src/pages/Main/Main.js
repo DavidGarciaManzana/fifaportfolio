@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from '@/pages/Main/Main.module.css'
+import Hero from "@/pages/Hero/Hero";
 
 function Main (){
     return (
         <>
             <main className={styles.main}>
-                <h1>Main</h1>
+
+                <Hero></Hero>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend est et malesuada ullamcorper. Mauris at mauris iaculis neque vehicula ultrices quis ac massa. Proin vitae erat accumsan, scelerisque mauris sit amet, vulputate tortor. Morbi vel pulvinar ante. Nulla quis commodo risus, semper pharetra nulla. Curabitur venenatis vitae sem eget sagittis. Cras semper nisi ipsum.
 
                     Integer pretium orci ut rutrum faucibus. Nam tempor porta sapien. Quisque tempus nec ex quis commodo. Fusce vestibulum auctor ipsum, a feugiat dui malesuada et. Quisque vehicula iaculis orci, at dignissim diam dictum vel. Suspendisse aliquet ligula turpis, nec vestibulum ipsum maximus eu. Quisque et mattis sem. Etiam malesuada hendrerit erat sed dignissim. Sed semper facilisis ex, ac vulputate enim auctor sit amet. Donec placerat, nisl ac molestie consectetur, enim orci posuere est, at blandit urna enim ac ligula. Curabitur finibus nunc sed condimentum rutrum. Nulla quis maximus lorem, non luctus metus. Mauris vehicula, sem id placerat mollis, metus dui tempus tortor, eget tincidunt enim velit sollicitudin lacus. Aenean lacinia tellus in sem accumsan accumsan.

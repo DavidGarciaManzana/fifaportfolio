@@ -1,7 +1,7 @@
 .topBar {
     position: fixed;
     display: flex;
-    height: 70px;
+    height: 45px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -16,24 +16,24 @@
 .rightButton {
     margin-right: 10px;
 }
-@media only screen and (min-width: 767px) {
-    .topBar{
-        position: relative;
-        z-index: 1;
-    }
-    .title{
-        font-size: 3.5rem;
-    }
-    .leftButton, .rightButton {
-        border: none;
-        width: 100px;
-        height: 100%;
-    }
+/*@media only screen and (min-width: 767px) {*/
+/*    .topBar{*/
+/*        position: relative;*/
+/*        z-index: 1;*/
+/*    }*/
+/*    .title{*/
+/*        font-size: 3.5rem;*/
+/*    }*/
+/*    .leftButton, .rightButton {*/
+/*        border: none;*/
+/*        width: 100px;*/
+/*        height: 100%;*/
+/*    }*/
 
-    .link {
-        width: 100%;
-        display: block;
-        height: 100%;
-    }
+/*    .link {*/
+/*        width: 100%;*/
+/*        display: block;*/
+/*        height: 100%;*/
+/*    }*/
 
-}
+/*}*/
