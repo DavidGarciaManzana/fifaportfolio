@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '@/pages/Main/Main.module.css'
 import Hero from "@/pages/Hero/Hero";
+import DownloadCvButton from "@/pages/DownloadCvButton/DownloadCvButton";
 
 function Main (){
     return (
@@ -8,6 +9,7 @@ function Main (){
             <main className={styles.main}>
 
                 <Hero></Hero>
+
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend est et malesuada ullamcorper. Mauris at mauris iaculis neque vehicula ultrices quis ac massa. Proin vitae erat accumsan, scelerisque mauris sit amet, vulputate tortor. Morbi vel pulvinar ante. Nulla quis commodo risus, semper pharetra nulla. Curabitur venenatis vitae sem eget sagittis. Cras semper nisi ipsum.
 

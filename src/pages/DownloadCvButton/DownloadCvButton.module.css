@@ -1,0 +1,25 @@
+.button{
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url('../../../public/totyiconbg.png');
+    height: 20px;
+    background-size: 182%;
+    width: 150px ;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+    /*font-family: "DINPro-Cond-Med",Arial,sans-serif;*/
+    background-position-y: -282px ;
+    background-position-x: -56px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
