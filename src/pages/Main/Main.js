@@ -1,25 +1,32 @@
 import React from 'react'
 import styles from '@/pages/Main/Main.module.css'
 import Hero from "@/pages/Hero/Hero";
-import DownloadCvButton from "@/pages/DownloadCvButton/DownloadCvButton";
 import TalentTab from "@/pages/TalentTab/TalentTab";
 import ContactBar from "@/pages/ContactBar/ContactBar"
+import ChartBar from "@/pages/ChartBar/ChartBar"
+
 
 function Main() {
+
     return (
         <>
             <main className={styles.main}>
 
-                <Hero></Hero>
-                <ContactBar></ContactBar>
-                <TalentTab></TalentTab>
-                <p className={styles.para}>
+                <Hero/>
+                <ContactBar/>
+                <TalentTab/>
+                <ChartBar/>
+
+                <p>
                     David is a Mexican software developer.
-                    He has a passion for learning and is constantly expanding his knowledge base, drawing inspiration from a
+                    He has a passion for learning and is constantly expanding his knowledge base, drawing inspiration
+                    from a
                     diverse range of industries to apply to his work.
-                    An abstract thinker who is obsessed with details and prides himself on his ability to collaborate with
+                    An abstract thinker who is obsessed with details and prides himself on his ability to collaborate
+                    with
                     others effectively.
-                    He is an excellent communicator, a great listener, and a team player who is always available to help his
+                    He is an excellent communicator, a great listener, and a team player who is always available to help
+                    his
                     colleagues.
                     With his petroleum engineering background, David brings a unique perspective to his work, and his
                     creativity
