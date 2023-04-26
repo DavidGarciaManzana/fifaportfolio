@@ -15,6 +15,7 @@
 
 }
 .button {
+
     width: 100%;
     background-color: #202020;
     height: 60px;
@@ -22,7 +23,10 @@
     color: rgba(255, 255, 255, .6);
 
 }
-
+.button:focus {
+    outline: none;
+    box-shadow: none;
+}
 .panels {
     align-self: center;
     height: 300px;

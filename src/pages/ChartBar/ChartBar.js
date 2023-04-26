@@ -4,18 +4,37 @@ import useChartData from "@/hooks/useChartData";
 import {Doughnut} from "react-chartjs-2";
 import {Chart, ArcElement} from "chart.js";
 import {crypto} from "next/dist/compiled/@edge-runtime/primitives/crypto";
+
 Chart.register(ArcElement);
 
 function ChartBar() {
     const charData = [
-        {id: crypto.randomUUID(),percentage: 80, color: '#7DA336', title: 'Communication'},
-        {id: crypto.randomUUID(),percentage: 95, color: '#326211', title: 'Problem Solving'},
-        {id: crypto.randomUUID(),percentage: 99, color: '#326211', title: 'Collaboration'},
-        {id: crypto.randomUUID(),percentage: 78, color: '#7DA336', title: 'Time Management'},
-        {id: crypto.randomUUID(),percentage: 90, color: '#7DA336', title: 'Attention to detail'}
+        {id: crypto.randomUUID(), percentage: 80, color: '#7DA336', title: 'Communication'},
+        {id: crypto.randomUUID(), percentage: 95, color: '#326211', title: 'Problem Solving'},
+        {id: crypto.randomUUID(), percentage: 99, color: '#326211', title: 'Collaboration'},
+        {id: crypto.randomUUID(), percentage: 78, color: '#7DA336', title: 'Time Management'},
+        {id: crypto.randomUUID(), percentage: 90, color: '#7DA336', title: 'Attention to detail'}
     ]
+    const chartRef = React.useRef();
+    const [isChartInView, setIsChartInView] = React.useState(false);
+    React.useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const [entry] = entries;
+            setIsChartInView(entry.isIntersecting);
+        }, { threshold: 0.00001 });
+
+        if (chartRef.current) {
+            observer.observe(chartRef.current);
+        }
+
+        return () => {
+            if (chartRef.current) {
+                observer.unobserve(chartRef.current);
+            }
+        };
+    }, []);
     return (
-        <div className={styles.chartContainer}>
+        <div ref={chartRef} className={styles.chartContainer}>
             {charData.map((info) => (
                 <div className={styles.chart} key={info.id}>
                     <Doughnut
@@ -31,9 +50,14 @@ function ChartBar() {
                             },
                             rotation: -90,
                             circumference: 180,
-                            cutout: "75%",
+                            cutout: "80%",
                             maintainAspectRatio: true,
-                            responsive: true
+                            responsive: true,
+
+
+
+
+
                         }}
                     />
                     <div className={styles.chartTitle}>{info.title}</div>
