@@ -67,8 +67,7 @@ function ChartBar() {
 
 
 
-                        }}
-                        style={{ display: isChartInView ? 'block' : 'none' }}/>
+                        }}/>
                     <div className={styles.chartTitle}>{info.title}</div>
                     <div className={styles.chartPercentage}>{info.percentage}%</div>
                 </div>
