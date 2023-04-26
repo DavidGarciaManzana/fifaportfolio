@@ -8,6 +8,10 @@
     align-items: center;
     background-color: mintcream;
 }
+.title{
+    font-weight: 300;
+    font-family: 'Gloria Hallelujah', cursive;
+}
 
 .leftButton {
     height: 100%;
