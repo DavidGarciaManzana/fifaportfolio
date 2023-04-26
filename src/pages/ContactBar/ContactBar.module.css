@@ -1,0 +1,11 @@
+.description {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    background-image: linear-gradient(45deg, rgb(232, 233, 232) 0%, rgb(40, 112, 237, 0.8) 80%, rgb(40, 112, 237, 0.9) 90%, rgb(40, 112, 237) 100%);
+}
+.description a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
