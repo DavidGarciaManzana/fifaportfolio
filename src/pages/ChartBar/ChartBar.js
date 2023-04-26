@@ -56,7 +56,7 @@ function ChartBar() {
                             animations: {
                                 animation: {
                                     delay: 3000, // wait for 9 seconds before starting the animation
-                                    // duration: 1000,
+                                    enabled: isChartInView,// duration: 1000,
                                     // easing: 'linear',
                                     // from: 1,
                                     // to: 0,
@@ -68,7 +68,7 @@ function ChartBar() {
 
 
                         }}
-                    />
+                        style={{ display: isChartInView ? 'block' : 'none' }}/>
                     <div className={styles.chartTitle}>{info.title}</div>
                     <div className={styles.chartPercentage}>{info.percentage}%</div>
                 </div>
