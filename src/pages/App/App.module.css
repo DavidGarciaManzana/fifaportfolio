@@ -1,5 +1,5 @@
 .appContainer{
-    background-color: skyblue;
+    background-color: #191919;
     display: flex;
     flex-direction: column;
 }

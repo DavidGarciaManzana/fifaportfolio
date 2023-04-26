@@ -31,7 +31,7 @@ function ChartBar() {
                             },
                             rotation: -90,
                             circumference: 180,
-                            cutout: "60%",
+                            cutout: "75%",
                             maintainAspectRatio: true,
                             responsive: true
                         }}
