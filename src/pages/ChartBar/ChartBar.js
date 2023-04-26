@@ -53,7 +53,16 @@ function ChartBar() {
                             cutout: "80%",
                             maintainAspectRatio: true,
                             responsive: true,
-
+                            animations: {
+                                animation: {
+                                    delay: 3000, // wait for 9 seconds before starting the animation
+                                    // duration: 1000,
+                                    // easing: 'linear',
+                                    // from: 1,
+                                    // to: 0,
+                                    // loop: true
+                                }
+                            }
 
 
 
