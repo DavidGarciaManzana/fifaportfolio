@@ -8,9 +8,9 @@ Chart.register(ArcElement);
 
 function ChartBar() {
     const charData = [
-        {id: crypto.randomUUID(),percentage: 80, color: '#326211', title: 'Communication'},
+        {id: crypto.randomUUID(),percentage: 80, color: '#7DA336', title: 'Communication'},
         {id: crypto.randomUUID(),percentage: 95, color: '#326211', title: 'Problem Solving'},
-        {id: crypto.randomUUID(),percentage: 99, color: '#7DA336', title: 'Collaboration'},
+        {id: crypto.randomUUID(),percentage: 99, color: '#326211', title: 'Collaboration'},
         {id: crypto.randomUUID(),percentage: 78, color: '#7DA336', title: 'Time Management'},
         {id: crypto.randomUUID(),percentage: 90, color: '#7DA336', title: 'Attention to detail'}
     ]
