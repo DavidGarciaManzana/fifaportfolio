@@ -6,7 +6,11 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: mintcream;
+    background-image: url('../../../public/totyiconbg.png');
+    background-size: 200%;|
+    background-position-y: 60% ;
+    background-position-x: 50% ;
+    background-repeat: no-repeat;
 }
 .title{
     font-weight: 300;
