@@ -69,7 +69,7 @@ function ChartBar() {
 
 
                         }}
-                        style={{ opacity: isChartInView ? 1 : 0 ,transition: 'opacity 1s ease-out'}}/>
+                        style={{ opacity: isChartInView ? 1 : 0}}/>
                     <div className={styles.chartTitle}>{info.title}</div>
                     <div className={styles.chartPercentage}>{info.percentage}%</div>
                 </div>
