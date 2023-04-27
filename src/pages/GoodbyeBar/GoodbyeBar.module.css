@@ -1,0 +1,25 @@
+.goodbyeContainer {
+    margin-top: 20px;
+
+    width: 100%;
+    padding: 15px;
+    background-color: #55cca2;
+
+}
+
+.goodbyeContainer p {
+    text-align: center;
+    color: #fff;
+}
+
+.iconContainer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.description a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}

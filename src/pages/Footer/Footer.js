@@ -1,10 +1,11 @@
 import React from 'react'
+import styles from '@/pages/Footer/Footer.module.css'
 
 function Footer (){
     return (
         <>
-            <footer>
-                <h1>Footer</h1>
+            <footer className={styles.footerContainer}>
+                <p>Inspired by <a href={'https://futbin.com'}>FUTBIN</a></p>
             </footer>
         </>
     )

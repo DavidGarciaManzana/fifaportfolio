@@ -6,6 +6,7 @@ import ContactBar from "@/pages/ContactBar/ContactBar"
 import ChartBar from "@/pages/ChartBar/ChartBar"
 import AboutMe from "@/pages/AboutMe/AboutMe";
 import Comments from "@/pages/Comments/Comments";
+import GoodbyeBar from "@/pages/GoodbyeBar/GoodbyeBar";
 
 
 function Main() {
@@ -20,7 +21,7 @@ function Main() {
                 <ChartBar/>
                 <AboutMe/>
                 <Comments/>
-
+                <GoodbyeBar/>
             </main>
         </>
     )
