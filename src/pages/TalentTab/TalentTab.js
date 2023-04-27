@@ -2,6 +2,7 @@ import React, {Fragment} from 'react'
 import styles from '@/pages/TalentTab/TalentTab.module.css'
 import {Tab} from '@headlessui/react'
 import TechStack from "@/pages/TechStack/TechStack";
+import Projects from "@/pages/Projects/Projects";
 
 function TalentTab() {
     return (
@@ -46,7 +47,9 @@ function TalentTab() {
                     <Tab.Panel>
                         <TechStack/>
                     </Tab.Panel>
-                    <Tab.Panel>Content 2</Tab.Panel>
+                    <Tab.Panel>
+                        <Projects/>
+                    </Tab.Panel>
                     <Tab.Panel>Content 3</Tab.Panel>
                     <Tab.Panel>Content 4</Tab.Panel>
                 </Tab.Panels>
