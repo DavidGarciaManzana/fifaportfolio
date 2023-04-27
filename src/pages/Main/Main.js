@@ -5,6 +5,7 @@ import TalentTab from "@/pages/TalentTab/TalentTab";
 import ContactBar from "@/pages/ContactBar/ContactBar"
 import ChartBar from "@/pages/ChartBar/ChartBar"
 import AboutMe from "@/pages/AboutMe/AboutMe";
+import Comments from "@/pages/Comments/Comments";
 
 
 function Main() {
@@ -18,6 +19,7 @@ function Main() {
                 <TalentTab/>
                 <ChartBar/>
                 <AboutMe/>
+                <Comments/>
 
             </main>
         </>
