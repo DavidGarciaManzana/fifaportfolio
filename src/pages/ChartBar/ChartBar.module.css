@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-content: stretch;
     background-color: #202020;
+    padding-top: 15px;
 }
 
 .chart {
