@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react'
 import styles from '@/pages/TalentTab/TalentTab.module.css'
 import {Tab} from '@headlessui/react'
+import TechStack from "@/pages/TechStack/TechStack";
 
 function TalentTab() {
     return (
@@ -11,7 +12,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab} >
                         {({selected}) => (
                             <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                                Tab 1
+                                Tech Stack
                             </button>
                         )}
                     </Tab>
@@ -42,7 +43,9 @@ function TalentTab() {
 
                 </Tab.List>
                 <Tab.Panels className={styles.panels}>
-                    <Tab.Panel>Content 1</Tab.Panel>
+                    <Tab.Panel>
+                        <TechStack/>
+                    </Tab.Panel>
                     <Tab.Panel>Content 2</Tab.Panel>
                     <Tab.Panel>Content 3</Tab.Panel>
                     <Tab.Panel>Content 4</Tab.Panel>

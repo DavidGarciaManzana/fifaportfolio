@@ -1,0 +1,26 @@
+.techStackContainer {
+
+}
+
+.title {
+    font-size: 26px;
+    margin-top: 10px;
+    color: #e6edf3;
+    text-align: center;
+}
+
+.langBoxes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.toolBoxes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -29,7 +29,6 @@
 }
 .panels {
     align-self: center;
-    height: 300px;
 }
 .selected{
     border-bottom: 3px solid rgba(255, 255, 255, .6);
