@@ -33,6 +33,7 @@ function ChartBar() {
             }
         };
     }, []);
+
     return (
         <div ref={chartRef} className={styles.chartContainer}>
             {charData.map((info) => (
@@ -68,7 +69,7 @@ function ChartBar() {
 
 
                         }}
-                        style={{ opacity: isChartInView ? 1 : 0 }}/>
+                        style={{ opacity: isChartInView ? 1 : 0 ,transition: 'opacity 1s ease-out'}}/>
                     <div className={styles.chartTitle}>{info.title}</div>
                     <div className={styles.chartPercentage}>{info.percentage}%</div>
                 </div>
