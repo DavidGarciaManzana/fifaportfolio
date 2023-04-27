@@ -21,24 +21,24 @@ function ChartBar() {
         const observer = new IntersectionObserver((entries) => {
             const [entry] = entries;
             setIsChartInView(entry.isIntersecting);
-        }, { threshold: 0.00001 });
+        }, { threshold: 0.1 });
 
         if (chartRef.current) {
             observer.observe(chartRef.current);
         }
 
         return () => {
-            if (chartRef.current) {
+            // if (chartRef.current) {
                 observer.unobserve(chartRef.current);
-            }
+            // }
         };
     }, []);
 
     return (
-        <div ref={chartRef} className={styles.chartContainer}>
+        <div ref={chartRef} className={styles.chartContainer} style={{ flexWrap: isChartInView ? 'wrap' : 'wrap'}} >
             {charData.map((info) => (
                 <div className={styles.chart} key={info.id}>
-                    <Doughnut
+                    <Doughnut className={styles.doughnut}
                         data={useChartData(info.percentage, info.color)}
                         options={{
                             plugins: {
@@ -52,21 +52,17 @@ function ChartBar() {
                             rotation: -90,
                             circumference: 180,
                             cutout: "80%",
-                            maintainAspectRatio: true,
+                            maintainAspectRatio: false,
+                            aspectRatio:1,
                             responsive: true,
                             animations: {
                                 animation: {
-                                    delay: 3000, // wait for 9 seconds before starting the animation
+                                    delay: 500, // wait for 9 seconds before starting the animation
                                     enabled: isChartInView,// duration: 1000,
-                                    // easing: 'linear',
-                                    // from: 1,
-                                    // to: 0,
-                                    // loop: true
+                                    duration:1500,
+
                                 }
                             }
-
-
-
                         }}
                         style={{ opacity: isChartInView ? 1 : 0}}/>
                     <div className={styles.chartTitle}>{info.title}</div>

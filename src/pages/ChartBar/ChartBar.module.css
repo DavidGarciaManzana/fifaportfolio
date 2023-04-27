@@ -1,6 +1,7 @@
 .chartContainer {
     margin-top: 20px;
     display: flex;
+    flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: stretch;
@@ -12,8 +13,20 @@
     display: flex;
     justify-content: center;
     height: 100px;
-
+    width: 100px;
+/*opacity: 0;*/
 }
+/*.doughnut {*/
+/*    border:5px solid green;*/
+/*}*/
+/*.doughnut:first-child {*/
+/*    opacity: 0;*/
+/*    outline:5px solid red;*/
+/*}*/
+/*.doughnut:first-child:first-child {*/
+/*    opacity: 0;*/
+/*    border:5px solid blue;*/
+/*}*/
 
 .chartTitle {
     color: white;

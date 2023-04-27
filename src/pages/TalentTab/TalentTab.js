@@ -20,7 +20,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab} >
                         {({selected}) => (
                         <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                            Tab 2
+                            Projects
                         </button>
                     )}
                     </Tab>
@@ -28,7 +28,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                         <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                            Tab 3
+                            Experience
                         </button>
                     )}
                     </Tab>
@@ -36,7 +36,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                         <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                            Tab 4
+                            Contact
                         </button>
                     )}
                     </Tab>
