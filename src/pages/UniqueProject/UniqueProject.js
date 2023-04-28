@@ -3,7 +3,7 @@ import styles from '@/pages/UniqueProject/UniqueProject.module.css'
 import {ArrowRight} from 'react-feather'
 
 function UniqueProject({picture, title, link, languages = '', children}) {
-    
+
     return (
         <div className={styles.projectContainer}>
             <img className={styles.webPicture} src={picture} alt=""/>

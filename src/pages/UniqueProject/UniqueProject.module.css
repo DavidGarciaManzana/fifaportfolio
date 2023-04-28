@@ -1,7 +1,4 @@
 .projectContainer {
-    width: 250px;
-    /*padding: 0 16px 16px;*/
-    margin-top: 20px;
     background-color: #ffffff;
     border-radius: 15px;
     display: flex;
@@ -30,21 +27,23 @@
 
 .text {
     padding: 12px;
-    /*position: relative;*/
 }
-.text h1{
+
+.text h1 {
 
     font-size: 20px;
 }
+
 .text p {
     font-size: 14px;
 }
+
 .text img {
-    /*position: absolute;*/
     height: 20px;
 }
-.titleFlagContainer{
-display: flex;
+
+.titleFlagContainer {
+    display: flex;
     align-items: center;
     gap: 10px;
 }
