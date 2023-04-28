@@ -9,13 +9,11 @@
     align-items: center;
 }
 
-.projectContainer img {
+.webPicture {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    /*margin-top: 15px;*/
-    /*height: 200px;*/
     width: 100%;
-    background-color: seagreen;
+    background-color: #55cca2;
 }
 
 .projectContainer h1 {
@@ -32,6 +30,7 @@
 
 .text {
     padding: 12px;
+    /*position: relative;*/
 }
 .text h1{
 
@@ -39,4 +38,13 @@
 }
 .text p {
     font-size: 14px;
+}
+.text img {
+    /*position: absolute;*/
+    height: 20px;
+}
+.titleFlagContainer{
+display: flex;
+    align-items: center;
+    gap: 10px;
 }
