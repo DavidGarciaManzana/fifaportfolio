@@ -3,8 +3,8 @@ import styles from '@/pages/TalentTab/TalentTab.module.css'
 import {Tab} from '@headlessui/react'
 import TechStack from "@/pages/TechStack/TechStack";
 import Projects from "@/pages/Projects/Projects";
-import Jobs from "@/pages/Jobs/Jobs";
 import Experience from "@/pages/Experience/Experience";
+import ContactPanel from "@/pages/ContactPanel/ContactPanel";
 
 function TalentTab() {
     return (
@@ -55,7 +55,9 @@ function TalentTab() {
                     <Tab.Panel>
                         <Experience/>
                     </Tab.Panel>
-                    <Tab.Panel>Content 4</Tab.Panel>
+                    <Tab.Panel>
+                        <ContactPanel/>
+                    </Tab.Panel>
                 </Tab.Panels>
             </Tab.Group>
         </div>
