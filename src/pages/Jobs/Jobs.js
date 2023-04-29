@@ -12,7 +12,7 @@ function Jobs() {
                 Experienced in using Scrum methodology to work effectively in a team environment. I am eager to learn
                 and implement new technologies to enhance my skills and knowledge.
             </UniqueJob>
-            <UniqueJob picture={'freelance.jpg'} role={'Web developer'} place={'Freelance · Full-time'}
+            <UniqueJob picture={'freelance4.png'} role={'Web developer'} place={'Freelance · Full-time'}
                        startingDate={'Mar 2021'} endDate={'Dec 2021'}>
                 Experienced in using HTML5, CSS3, Sass, Flexbox, Grid, animations, responsive web design, Git, and
                 JavaScript (ReactJs) to build dynamic and visually appealing web applications with intuitive user
