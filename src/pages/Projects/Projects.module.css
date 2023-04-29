@@ -1,7 +1,7 @@
 .projectsContainer {
     display: flex;
     flex-direction: column;
-    padding: 20px 80px;
+    padding: 20px 80px 0 80px;
     gap: 20px;
     max-width: 500px;
 }

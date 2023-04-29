@@ -28,9 +28,9 @@ function ChartBar() {
         }
 
         return () => {
-            // if (chartRef.current) {
+            if (chartRef.current) {
                 observer.unobserve(chartRef.current);
-            // }
+            }
         };
     }, []);
 

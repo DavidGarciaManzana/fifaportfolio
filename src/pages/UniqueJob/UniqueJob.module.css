@@ -1,0 +1,42 @@
+.uniqueJobContainer {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.uniqueJobContainer:nth-child(n+3) {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.uniqueJobContainer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.imageContainer {
+    margin-top: 10px;
+}
+
+.textContainer {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.textContainer h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.textContainer h3 {
+    color: rgba(255, 255, 255, .9);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.textContainer h4 {
+    color: rgba(255, 255, 255, .6);
+    font-weight: 400;
+    font-size: 14px;
+}

@@ -3,14 +3,16 @@ import styles from '@/pages/TalentTab/TalentTab.module.css'
 import {Tab} from '@headlessui/react'
 import TechStack from "@/pages/TechStack/TechStack";
 import Projects from "@/pages/Projects/Projects";
+import Jobs from "@/pages/Jobs/Jobs";
+import Experience from "@/pages/Experience/Experience";
 
 function TalentTab() {
     return (
         <div className={styles.group}>
-            <Tab.Group >
+            <Tab.Group>
                 <Tab.List className={styles.tabList}>
 
-                    <Tab as={Fragment} className={styles.tab} >
+                    <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                             <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
                                 Tech Stack
@@ -18,28 +20,28 @@ function TalentTab() {
                         )}
                     </Tab>
 
-                    <Tab as={Fragment} className={styles.tab} >
+                    <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
-                        <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                            Projects
-                        </button>
-                    )}
+                            <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
+                                Projects
+                            </button>
+                        )}
                     </Tab>
 
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
-                        <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                            Experience
-                        </button>
-                    )}
+                            <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
+                                Experience
+                            </button>
+                        )}
                     </Tab>
 
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
-                        <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                            Contact
-                        </button>
-                    )}
+                            <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
+                                Contact
+                            </button>
+                        )}
                     </Tab>
 
                 </Tab.List>
@@ -50,7 +52,9 @@ function TalentTab() {
                     <Tab.Panel>
                         <Projects/>
                     </Tab.Panel>
-                    <Tab.Panel>Content 3</Tab.Panel>
+                    <Tab.Panel>
+                        <Experience/>
+                    </Tab.Panel>
                     <Tab.Panel>Content 4</Tab.Panel>
                 </Tab.Panels>
             </Tab.Group>

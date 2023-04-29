@@ -29,6 +29,7 @@
 }
 .panels {
     align-self: center;
+    padding-bottom: 20px;
 }
 .selected{
     border-bottom: 3px solid rgba(255, 255, 255, .6);
