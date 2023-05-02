@@ -6,9 +6,6 @@ function Hero() {
     return (
         <>
             <div className={styles.heroContainer}>
-                {/*<div className={styles.imageBackground}>*/}
-
-                {/*</div>*/}
                 <img className={styles.imageBackground} src="davidbg.png" alt=""/>
                 <img className={styles.fifaCard} src='GARCIA.png' alt=""/>
                 <DownloadCvButton></DownloadCvButton>

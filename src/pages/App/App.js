@@ -12,7 +12,6 @@ function App() {
         <>
             <Head>
                 <title>{t?.title}</title>
-
             </Head>
             <div className={styles.appContainer}>
                 <TopBar></TopBar>

@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from '@/pages/TechStack/TechStack.module.css'
+import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
 function TechStack() {
+    const {t} = React.useContext(LanguageContext);
     return (
         <div className={styles.techStackContainer}>
-            <h1 className={styles.title}>Languages & Frameworks</h1>
+            <h1 className={styles.title}>{t?.techTitle}</h1>
             <div className={styles.langBoxes}>
 
                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
@@ -59,7 +61,7 @@ function TechStack() {
                 </a>
 
             </div>
-            <h1 className={styles.title}>Tools that I love ❤️</h1>
+            <h1 className={styles.title}>{t?.techTitle2}</h1>
             <div className={styles.toolBoxes}>
 
                 <a href="https://www.namecheap.com/" target="_blank">

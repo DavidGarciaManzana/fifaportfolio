@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from '@/pages/UniqueProject/UniqueProject.module.css'
 import {ArrowRight} from 'react-feather'
+import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
 function UniqueProject({picture, title, link, languages = '', children}) {
-
+    const {t} = React.useContext(LanguageContext);
     return (
         <div className={styles.projectContainer}>
             <img className={styles.webPicture} src={picture} alt=""/>
@@ -17,7 +18,7 @@ function UniqueProject({picture, title, link, languages = '', children}) {
 
                 <p>{children}</p>
                 <a href={link} target={"_blank"}>
-                    <p>View Project <ArrowRight strokeWidth={2} height={20}/></p>
+                    <p>{t?.viewProject} <ArrowRight strokeWidth={2} height={20}/></p>
                 </a>
 
             </div>

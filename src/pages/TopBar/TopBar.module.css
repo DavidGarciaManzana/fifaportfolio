@@ -17,13 +17,16 @@
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-.leftButton {
+.languageSelect {
+    background-color: transparent;
+    border: none;
     height: 100%;
     margin-left: 10px;
     cursor: pointer;
 }
 .rightButton {
     margin-right: 10px;
+    width: 37px;
 }
 /*@media only screen and (min-width: 767px) {*/
 /*    .topBar{*/

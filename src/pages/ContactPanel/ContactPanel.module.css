@@ -11,7 +11,14 @@
     color: #e6edf3;
     text-align: center;
 }
-.techStackContainer img {
-    height: 50px;
+.imageContainer{
+    position: relative;
+}
+.arrow {
+    pointer-events: none;
+    height: 60px;
+    position: absolute;
+    bottom: -3px;
+    left: -18px;
 }
 

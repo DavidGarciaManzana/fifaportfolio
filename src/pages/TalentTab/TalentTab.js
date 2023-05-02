@@ -5,8 +5,10 @@ import TechStack from "@/pages/TechStack/TechStack";
 import Projects from "@/pages/Projects/Projects";
 import Experience from "@/pages/Experience/Experience";
 import ContactPanel from "@/pages/ContactPanel/ContactPanel";
+import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
 function TalentTab() {
+    const {t} = React.useContext(LanguageContext);
     return (
         <div className={styles.group}>
             <Tab.Group>
@@ -15,7 +17,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                             <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                                Tech Stack
+                                {t?.tech}
                             </button>
                         )}
                     </Tab>
@@ -23,7 +25,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                             <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                                Projects
+                                {t?.projects}
                             </button>
                         )}
                     </Tab>
@@ -31,7 +33,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                             <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                                Experience
+                                {t?.experience}
                             </button>
                         )}
                     </Tab>
@@ -39,7 +41,7 @@ function TalentTab() {
                     <Tab as={Fragment} className={styles.tab}>
                         {({selected}) => (
                             <button className={`${styles.button} ${selected ? styles.selected : styles.notSelected} `}>
-                                Contact
+                                {t?.contact}
                             </button>
                         )}
                     </Tab>
