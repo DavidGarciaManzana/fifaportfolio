@@ -68,7 +68,7 @@
     transition-delay: 2.7s;
     pointer-events: none;
     position: absolute;
-    top: 34%;
+    top: 30%;
     left: 0;
 }
 
@@ -78,7 +78,7 @@
     transition-delay: 3.2s;
     pointer-events: none;
     position: absolute;
-    top: 47%;
+    top: 45%;
     left: 35%;
     transform: translateX(-50%);
 }
@@ -89,14 +89,14 @@
     transition-delay: 6.2s;
     pointer-events: none;
     position: absolute;
-    top: 47%;
+    top: 45%;
     right: 35%;
     transform: translateX(50%);
 }
 
 @media only screen and (min-width: 425px) {
     .zidane, .david {
-        top: 34%;
+        top: 30%;
     }
 
     .zidane {
@@ -115,7 +115,7 @@
     transition-delay: 3.7s;
     pointer-events: none;
     position: absolute;
-    top: 34%;
+    top: 30%;
     right: 0;
 }
 
@@ -170,6 +170,18 @@
 }
 
 @media only screen and (min-width: 425px) {
+    .rc{
+        bottom: 30%;
+    }
+    .cannavaro{
+        bottom: 30%;
+    }
+    .puyol{
+        bottom: 30%;
+    }
+    .casillas{
+        bottom: 10%;
+    }
     .david_real_initial {
         top: 280px;
     }
@@ -184,7 +196,7 @@
     transition: transform 2.5s cubic-bezier(0.1, 0.9, 0.2, 1);
     pointer-events: none;
     position: absolute;
-    top: 47%;
+    top: 45%;
     right: 35%;
     transform: translateX(50%);
 
@@ -197,7 +209,7 @@
 
 @media only screen and (min-width: 425px) {
     .david_real_final {
-        top: 34%;
+        top: 30%;
     }
 
     .david_real_final {
