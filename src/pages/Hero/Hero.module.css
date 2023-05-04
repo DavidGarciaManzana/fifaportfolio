@@ -10,10 +10,10 @@
 }
 
 .heroContainerAfterCv {
-    min-height: calc(100svh - 45px);
+    /*min-height: calc(100svh - 45px);*/
     overflow: hidden;
     position: relative;
-    height: calc(100svh - 45px);
+    /*height: calc(100svh - 45px);*/
     background-image: url('../../../public/pitch.jpg');
     background-size: cover;
     background-position: 50% -20px;
