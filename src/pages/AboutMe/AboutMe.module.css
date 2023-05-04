@@ -7,3 +7,7 @@
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
+
+.aboutContainerAfterCv {
+    display: none;
+}

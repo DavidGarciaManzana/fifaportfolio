@@ -1,0 +1,241 @@
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.playerImage {
+    height: 120px;
+}
+
+.baseImage {
+    height: 25px;
+    position: absolute;
+    bottom: -5px;
+    left: 29%;
+}
+
+.basePosition {
+    color: dodgerblue;
+    height: 25px;
+    position: absolute;
+    bottom: -8px;
+    left: 41px;
+    font-size: 14px;
+}
+
+.messi {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 2.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+
+.pele {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 1.7s;
+    pointer-events: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pele p {
+    left: 44px;
+    bottom: -9px;
+}
+
+.cr7 {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 1.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
+.dinho {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 2.7s;
+    pointer-events: none;
+    position: absolute;
+    top: 280px;
+    left: 0;
+}
+
+.zidane {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 3.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 400px;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.david {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 6.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 400px;
+    right: 35%;
+    transform: translateX(50%);
+}
+
+@media only screen and (min-width: 425px) {
+    .zidane, .david {
+        top: 280px;
+    }
+
+    .zidane {
+        left: 38%;
+    }
+
+    .david {
+        right: 38%;
+    }
+}
+
+
+.beckham {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 3.7s;
+    pointer-events: none;
+    position: absolute;
+    top: 280px;
+    right: 0;
+}
+
+.rc {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 4.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 530px;
+    left: 0;
+}
+
+.cannavaro {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 4.7s;
+    pointer-events: none;
+    position: absolute;
+    top: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.puyol {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 5.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 530px;
+    right: 0;
+}
+
+.casillas {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 5.7s;
+    pointer-events: none;
+    position: absolute;
+    top: 670px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.david_real_initial {
+    opacity: 1;
+    pointer-events: none;
+
+    position: absolute;
+    top: 900px;
+}
+
+@media only screen and (min-width: 425px) {
+    .david_real_initial {
+        top: 280px;
+    }
+
+    .david_real_initial {
+        right: 38%;
+    }
+}
+
+.david_real_final {
+    opacity: 1;
+    transition: transform 2.5s cubic-bezier(0.1, 0.9, 0.2, 1);
+    pointer-events: none;
+    position: absolute;
+    top: 400px;
+    right: 35%;
+    transform: translateX(50%);
+
+}
+
+.pulsing {
+    animation: pulse-animation 1s ease-in-out infinite;
+    animation-delay: .5s;
+}
+
+@media only screen and (min-width: 425px) {
+    .david_real_final {
+        top: 280px;
+    }
+
+    .david_real_final {
+        right: 38%;
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        right: 19%;
+    }
+    50% {
+        transform: scale(1.1);
+        right: 19%;
+    }
+    100% {
+        transform: scale(1);
+        right: 19%;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    @keyframes pulse-animation {
+        0% {
+            transform: scale(1);
+            right: 26%;
+        }
+        50% {
+            transform: scale(1.1);
+            right: 26%;
+        }
+        100% {
+            transform: scale(1);
+            right: 26%;
+        }
+    }
+}
+
+.playerhidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}

@@ -7,10 +7,10 @@ import Experience from "@/pages/Experience/Experience";
 import ContactPanel from "@/pages/ContactPanel/ContactPanel";
 import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
-function TalentTab() {
+function TalentTab({className = '',animationEndState ,...delegated}) {
     const {t} = React.useContext(LanguageContext);
     return (
-        <div className={styles.group}>
+        <div  className={`${animationEndState ? styles.groupAfterCv :styles.group} ${className}`} {...delegated}>
             <Tab.Group>
                 <Tab.List className={styles.tabList}>
 

@@ -1,5 +1,15 @@
-.appContainer{
+.appContainer {
     background-color: #191919;
     display: flex;
     flex-direction: column;
+}
+
+.footer {
+    /*border: 1px solid red;*/
+}
+
+.footerAfterCv {
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in-out, display 1s ease-in-out;
 }

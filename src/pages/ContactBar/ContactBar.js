@@ -2,9 +2,9 @@ import React from 'react'
 import styles from '@/pages/ContactBar/ContactBar.module.css'
 import {Mail, GitHub, Twitter, Linkedin, MessageSquare} from 'react-feather'
 
-function ContactBar() {
+function ContactBar({className = '',animationEndState ,...delegated}) {
     return (
-        <div className={styles.description}>
+        <div className={`${animationEndState ? styles.descriptionAfterCv :styles.description} ${className}`} {...delegated}>
             <a href='https://github.com/DavidGarciaManzana' target="_blank">
                 <GitHub strokeWidth={1.5} color={'white'}/>
             </a>

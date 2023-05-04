@@ -5,11 +5,11 @@ import UniqueComment from '@/pages/UniqueComment/UniqueComment'
 import Button from "@/pages/Button/Button";
 import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
-function Comments() {
+function Comments({className = '',animationEndState ,...delegated}) {
     const {t} = React.useContext(LanguageContext);
     const [allComments, setAllComments] = React.useState(false)
     return (
-        <>
+        <div className={`${animationEndState ? styles.supremeCommentsContainerAfterCv :styles.supremeCommentsContainer} ${className}`} {...delegated}>
             <div className={styles.commentsContainer}>
                 <MessageCircle color={'white'}></MessageCircle>
                 <p>{t?.comments}</p>
@@ -35,7 +35,7 @@ function Comments() {
                     <UniqueComment profilePicture={'mullerpp.jpg'} name={'Thomas Müller'} date={'Mar 6st, 16:27 PM'}
                                    likes={1300}>Ich mag diese Website nicht, sie ist nicht auf Deutsch. Barcelona wird nächste Saison dafür bezahlen.</UniqueComment>
                 </>)}
-        </>
+        </div>
     )
 }
 

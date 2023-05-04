@@ -8,7 +8,7 @@ import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
 Chart.register(ArcElement);
 
-function ChartBar() {
+function ChartBar({className = '',animationEndState ,...delegated}) {
     const {t} = React.useContext(LanguageContext);
     const charData = [
         {id: crypto.randomUUID(), percentage: 80, color: '#7DA336', title: t?.communication},
@@ -37,7 +37,7 @@ function ChartBar() {
     }, []);
 
     return (
-        <div ref={chartRef} className={styles.chartContainer} style={{flexWrap: isChartInView ? 'wrap' : 'wrap'}}>
+        <div className={`${animationEndState ? styles.chartContainerAfterCv :styles.chartContainer} ${className}`} {...delegated} ref={chartRef} style={{flexWrap: isChartInView ? 'wrap' : 'wrap'}}>
             {charData.map((info) => (
                 <div className={styles.chart} key={info.id}>
                     <Doughnut className={styles.doughnut}

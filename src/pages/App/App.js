@@ -8,6 +8,10 @@ import Head from "next/head";
 
 function App() {
     const {t} = React.useContext(LanguageContext);
+    const [isCvDownloaded, setIsCvDownloaded] = React.useState(false);
+    let manageCvState = (st) => {
+        setIsCvDownloaded(st)
+    }
     return (
         <>
             <Head>
@@ -15,8 +19,8 @@ function App() {
             </Head>
             <div className={styles.appContainer}>
                 <TopBar></TopBar>
-                <Main></Main>
-                <Footer></Footer>
+                <Main state={isCvDownloaded} changeState={manageCvState}></Main>
+                <Footer className={!isCvDownloaded ? styles.footer : styles.footerAfterCv}/>
             </div>
         </>
     )

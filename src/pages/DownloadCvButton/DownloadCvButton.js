@@ -4,13 +4,14 @@ import Button from "@/pages/Button/Button";
 import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 import {useRouter} from "next/router";
 
-function DownloadCvButton() {
+function DownloadCvButton({changeState}) {
     const {locale} = useRouter();
     const {t} = React.useContext(LanguageContext);
     const downloadRef = React.useRef(null);
 
     const handleDownload = () => {
         downloadRef.current.click();
+        changeState(true)
     };
     return (
         <Button onClick={handleDownload} className={styles.button}>{t?.cv}

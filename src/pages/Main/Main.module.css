@@ -1,3 +1,52 @@
 .main {
     margin-top: 45px;
 }
+
+.mainAfterCv {
+    margin-top: 45px;
+}
+
+.contactBarAfterCv {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.contactBarInvisible {
+    display: none;
+}
+
+.aboutMeAfterCv {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.aboutMeInvisible {
+    display: none;
+}
+
+.commentsAfterCv {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.commentsInvisible {
+    display: none;
+}
+
+.talentTabAfterCv {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.chartBarAfterCv {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.talentTabInvisible {
+    display: none;
+}
+
+.chartBarInvisible {
+    display: none;
+}

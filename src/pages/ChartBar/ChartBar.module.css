@@ -8,6 +8,9 @@
     background-color: #202020;
     padding-top: 15px;
 }
+.chartContainerAfterCv{
+    display: none;
+}
 
 .chart {
     position: relative;
