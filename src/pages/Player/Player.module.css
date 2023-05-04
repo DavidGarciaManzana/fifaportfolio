@@ -30,8 +30,8 @@
     transition-delay: 2.2s;
     pointer-events: none;
     position: absolute;
-    top: 80px;
-    right: 10px;
+    top: 10%;
+    right: 3%;
 }
 
 .pele {
@@ -40,7 +40,7 @@
     transition-delay: 1.7s;
     pointer-events: none;
     position: absolute;
-    top: 50px;
+    top: 7%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -56,8 +56,10 @@
     transition-delay: 1.2s;
     pointer-events: none;
     position: absolute;
-    top: 80px;
-    left: 10px;
+    /*top: 80px;*/
+    /*left: 10px;*/
+    top: 10%;
+    left: 3%;
 }
 
 .dinho {
@@ -66,7 +68,7 @@
     transition-delay: 2.7s;
     pointer-events: none;
     position: absolute;
-    top: 280px;
+    top: 34%;
     left: 0;
 }
 
@@ -76,7 +78,7 @@
     transition-delay: 3.2s;
     pointer-events: none;
     position: absolute;
-    top: 400px;
+    top: 47%;
     left: 35%;
     transform: translateX(-50%);
 }
@@ -87,14 +89,14 @@
     transition-delay: 6.2s;
     pointer-events: none;
     position: absolute;
-    top: 400px;
+    top: 47%;
     right: 35%;
     transform: translateX(50%);
 }
 
 @media only screen and (min-width: 425px) {
     .zidane, .david {
-        top: 280px;
+        top: 34%;
     }
 
     .zidane {
@@ -113,7 +115,7 @@
     transition-delay: 3.7s;
     pointer-events: none;
     position: absolute;
-    top: 280px;
+    top: 34%;
     right: 0;
 }
 
@@ -123,7 +125,7 @@
     transition-delay: 4.2s;
     pointer-events: none;
     position: absolute;
-    top: 530px;
+    bottom: 20%;
     left: 0;
 }
 
@@ -133,7 +135,7 @@
     transition-delay: 4.7s;
     pointer-events: none;
     position: absolute;
-    top: 530px;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -144,7 +146,7 @@
     transition-delay: 5.2s;
     pointer-events: none;
     position: absolute;
-    top: 530px;
+    bottom: 20%;
     right: 0;
 }
 
@@ -154,7 +156,7 @@
     transition-delay: 5.7s;
     pointer-events: none;
     position: absolute;
-    top: 670px;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -164,7 +166,7 @@
     pointer-events: none;
 
     position: absolute;
-    top: 900px;
+    top: 150%;
 }
 
 @media only screen and (min-width: 425px) {
@@ -182,7 +184,7 @@
     transition: transform 2.5s cubic-bezier(0.1, 0.9, 0.2, 1);
     pointer-events: none;
     position: absolute;
-    top: 400px;
+    top: 47%;
     right: 35%;
     transform: translateX(50%);
 
@@ -195,7 +197,7 @@
 
 @media only screen and (min-width: 425px) {
     .david_real_final {
-        top: 280px;
+        top: 34%;
     }
 
     .david_real_final {
