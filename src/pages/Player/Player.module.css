@@ -5,23 +5,25 @@
 }
 
 .playerImage {
-    height: 120px;
+    height: 90px;
 }
 
+
 .baseImage {
-    height: 25px;
+    height: 20px;
     position: absolute;
-    bottom: -5px;
-    left: 29%;
+    bottom: -8px;
+    left: 28%;
 }
+
 
 .basePosition {
     color: dodgerblue;
     height: 25px;
     position: absolute;
-    bottom: -8px;
-    left: 41px;
-    font-size: 14px;
+    bottom: -14px;
+    left: 31px;
+    font-size: 11px;
 }
 
 .messi {
@@ -30,9 +32,10 @@
     transition-delay: 2.2s;
     pointer-events: none;
     position: absolute;
-    top: 10%;
+    top: 3%;
     right: 3%;
 }
+
 
 .pele {
     opacity: 1;
@@ -40,25 +43,45 @@
     transition-delay: 1.7s;
     pointer-events: none;
     position: absolute;
-    top: 7%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .pele p {
-    left: 44px;
-    bottom: -9px;
+    left: 33.5px;
+    bottom: -15px;
 }
-
+@media only screen and (min-width: 425px) {
+    .playerImage {
+        height: 110px;
+    }
+    .baseImage {
+        height: 25px;
+        position: absolute;
+        bottom: -8px;
+        left: 28%;
+    }
+    .basePosition {
+        color: dodgerblue;
+        height: 25px;
+        position: absolute;
+        bottom: -11px;
+        left: 38px;
+        font-size: 14px;
+    }
+    .pele p {
+        left: 40.5px;
+        bottom: -12px;
+    }
+}
 .cr7 {
     opacity: 1;
     transition: opacity 1s ease-in-out;
     transition-delay: 1.2s;
     pointer-events: none;
     position: absolute;
-    /*top: 80px;*/
-    /*left: 10px;*/
-    top: 10%;
+    top: 3%;
     left: 3%;
 }
 
@@ -68,7 +91,7 @@
     transition-delay: 2.7s;
     pointer-events: none;
     position: absolute;
-    top: 29%;
+    top: 22%;
     left: 0;
 }
 
@@ -78,7 +101,7 @@
     transition-delay: 3.2s;
     pointer-events: none;
     position: absolute;
-    top: 44%;
+    top: 37%;
     left: 35%;
     transform: translateX(-50%);
 }
@@ -89,7 +112,7 @@
     transition-delay: 6.2s;
     pointer-events: none;
     position: absolute;
-    top: 44%;
+    top: 37%;
     right: 35%;
     transform: translateX(50%);
 }
@@ -115,7 +138,7 @@
     transition-delay: 3.7s;
     pointer-events: none;
     position: absolute;
-    top: 29%;
+    top: 22%;
     right: 0;
 }
 
@@ -125,7 +148,7 @@
     transition-delay: 4.2s;
     pointer-events: none;
     position: absolute;
-    bottom: 21%;
+    bottom: 28%;
     left: 0;
 }
 
@@ -135,7 +158,7 @@
     transition-delay: 4.7s;
     pointer-events: none;
     position: absolute;
-    bottom: 22%;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -146,7 +169,7 @@
     transition-delay: 5.2s;
     pointer-events: none;
     position: absolute;
-    bottom: 21%;
+    bottom: 28%;
     right: 0;
 }
 
@@ -156,7 +179,7 @@
     transition-delay: 5.7s;
     pointer-events: none;
     position: absolute;
-    bottom: 4%;
+    bottom: 11%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -196,7 +219,7 @@
     transition: transform 2.5s cubic-bezier(0.1, 0.9, 0.2, 1);
     pointer-events: none;
     position: absolute;
-    top: 44%;
+    top: 37%;
     right: 35%;
     transform: translateX(50%);
 
