@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '@/pages/Player/Player.module.css'
+import {useRouter} from "next/router";
 
 function Player({
                     className = '',
@@ -13,10 +14,15 @@ function Player({
     const playerRef = React.useRef(null);
     const audioRef = React.useRef(null);
     const [lastLittlePerk, setLastLittlePerk] = React.useState(false);
+    const downloadRef = React.useRef(null);
+    const {locale} = useRouter();
 
     function playSound() {
         audioRef.current.play();
     }
+    const handleDownload = () => {
+        downloadRef.current.click();
+    };
 
     React.useEffect(() => {
         const player = playerRef.current;
@@ -32,6 +38,7 @@ function Player({
         }
         if (itsDavid) {
             setLastLittlePerk(true);
+            handleDownload()
         }
     }
     return (
@@ -45,6 +52,7 @@ function Player({
             <img className={`${styles.playerImage} ${lastLittlePerk ? styles.pulsing : ''}`} src={picture} alt=""/>
             <img className={styles.baseImage} src='squadSlotBase.png' alt=""/>
             <p className={styles.basePosition}>{position}</p>
+            {locale==='en' ? <a ref={downloadRef} href="En_Cv_David_Garcia.pdf" download="En_Cv_David_Garcia"/>:<a ref={downloadRef} href="Es_Cv_David_Garcia.pdf" download="Es_Cv_David_Garcia"/>}
         </div>
     );
 }

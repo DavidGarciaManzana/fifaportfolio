@@ -2,15 +2,23 @@ import React from 'react'
 import styles from '@/pages/Hero/Hero.module.css'
 import DownloadCvButton from "@/pages/DownloadCvButton/DownloadCvButton";
 import Player from "@/pages/Player/Player";
+import {SkipBack} from 'react-feather'
+import Button from "@/pages/Button/Button";
 
 function Hero({fchangeState, fstate}) {
     const [fifaCardAnimationFinished, setFifaCardAnimationFinished] = React.useState(false);
     const [emptyCardAnimationFinished, setEmptyCardAnimationFinished] = React.useState(false);
+
     function handleAnimationEnd() {
         setFifaCardAnimationFinished(true);
     }
+
     function handleEmptyAnimationEnd() {
         setEmptyCardAnimationFinished(true);
+    }
+
+    function goBack() {
+        location.reload();
     }
 
     return (
@@ -27,33 +35,39 @@ function Hero({fchangeState, fstate}) {
                 <Player position={'ST'} animationEnd={fifaCardAnimationFinished}
                         picture={'PELÉ.png'} player={'pele'}></Player>
 
-                <Player  position={'RW'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'RW'} animationEnd={fifaCardAnimationFinished}
                         picture={'messi_toty.png'} player={'messi'}></Player>
 
-                <Player  position={'LM'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'LM'} animationEnd={fifaCardAnimationFinished}
                         picture={'RONALDINHO.png'} player={'dinho'}></Player>
                 <Player position={'CM'} animationEnd={fifaCardAnimationFinished}
                         picture={'zidane_icon.png'} player={'zidane'}></Player>
-                <Player functionAfterAnimation={handleEmptyAnimationEnd} position={'CM'} animationEnd={fifaCardAnimationFinished}
+                <Player functionAfterAnimation={handleEmptyAnimationEnd} position={'CM'}
+                        animationEnd={fifaCardAnimationFinished}
                         picture={'emptyCard.png'} player={'david'}></Player>
-                <Player  position={'RM'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'RM'} animationEnd={fifaCardAnimationFinished}
                         picture={'beckham_icon.png'} player={'beckham'}></Player>
 
-                <Player  position={'LB'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'LB'} animationEnd={fifaCardAnimationFinished}
                         picture={'CARLOS.png'} player={'rc'}></Player>
-                <Player  position={'CB'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'CB'} animationEnd={fifaCardAnimationFinished}
                         picture={'cannvaro_icon.png'} player={'cannavaro'}></Player>
-                <Player  position={'RB'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'RB'} animationEnd={fifaCardAnimationFinished}
                         picture={'PUYOL.png'} player={'puyol'}></Player>
 
-                <Player  position={'GK'} animationEnd={fifaCardAnimationFinished}
+                <Player position={'GK'} animationEnd={fifaCardAnimationFinished}
                         picture={'casillas_icon.png'} player={'casillas'}></Player>
 
                 <Player position={'CM'} animationEnd={emptyCardAnimationFinished}
-                        picture={'garcia_small_toty.png'} player={'david_real_initial'} itsDavid={true} ></Player>
+                        picture={'garcia_small_toty.png'} player={'david_real_initial'} itsDavid={true}></Player>
 
 
-                <DownloadCvButton changeState={fchangeState}></DownloadCvButton>
+                <DownloadCvButton animationFinished={fifaCardAnimationFinished}
+                                  changeState={fchangeState}></DownloadCvButton>
+                <Button onClick={goBack}
+                        className={`${emptyCardAnimationFinished ? styles.backButtonAfterCv : styles.backButton}`}>
+                    <SkipBack height={'20px'}/>
+                </Button>
             </div>
         </>
     )

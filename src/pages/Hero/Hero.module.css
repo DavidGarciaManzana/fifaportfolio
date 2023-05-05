@@ -10,10 +10,8 @@
 }
 
 .heroContainerAfterCv {
-    /*min-height: calc(100svh - 45px);*/
     overflow: hidden;
     position: relative;
-    /*height: calc(100svh - 45px);*/
     background-image: url('../../../public/pitch.jpg');
     background-size: cover;
     background-position: 50% -20px;
@@ -89,7 +87,8 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-.david_real_final{
+
+.david_real_final {
     opacity: 1;
     pointer-events: none;
     position: absolute;
@@ -97,11 +96,69 @@
     right: 35%;
     transform: translateX(50%);
 }
+
 @media only screen and (min-width: 425px) {
     .david_real_final {
         top: 280px;
     }
+
     .david_real_final {
         right: 38%;
     }
+}
+
+.backButton {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url('../../../public/totyiconbg.png');
+    height: 20px;
+    background-size: 182%;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+    /*font-family: "DINPro-Cond-Med",Arial,sans-serif;*/
+    background-position-y: -282px;
+    background-position-x: -56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.backButtonAfterCv {
+    opacity: 1;
+    /*pointer-events: none;*/
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url('../../../public/totyiconbg.png');
+    height: 20px;
+    background-size: 182%;
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+    background-position-y: -382px;
+    background-position-x: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
