@@ -52,16 +52,19 @@
     left: 33.5px;
     bottom: -15px;
 }
+
 @media only screen and (min-width: 425px) {
     .playerImage {
         height: 110px;
     }
+
     .baseImage {
         height: 25px;
         position: absolute;
         bottom: -8px;
         left: 28%;
     }
+
     .basePosition {
         color: dodgerblue;
         height: 25px;
@@ -70,21 +73,25 @@
         left: 38px;
         font-size: 14px;
     }
+
     .pele p {
         left: 40.5px;
         bottom: -12px;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .playerImage {
         height: 150px;
     }
+
     .baseImage {
         height: 30px;
         position: absolute;
         bottom: -8px;
         left: 28%;
     }
+
     .basePosition {
         color: dodgerblue;
         height: 25px;
@@ -93,11 +100,13 @@
         left: 47px;
         font-size: 20px;
     }
+
     .pele p {
         left: 51.5px;
         bottom: -6px;
     }
 }
+
 .cr7 {
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -216,18 +225,22 @@
 }
 
 @media only screen and (min-width: 425px) {
-    .rc{
+    .rc {
         bottom: 30%;
     }
-    .cannavaro{
+
+    .cannavaro {
         bottom: 30%;
     }
-    .puyol{
+
+    .puyol {
         bottom: 30%;
     }
-    .casillas{
+
+    .casillas {
         bottom: 10%;
     }
+
     .david_real_initial {
         top: 280px;
     }
@@ -236,33 +249,42 @@
         right: 38%;
     }
 }
+
 @media only screen and (min-width: 1024px) {
-    .cr7{
+    .cr7 {
         left: 13%;
     }
-    .messi{
+
+    .messi {
         right: 13%;
     }
-    .rc{
+
+    .rc {
         bottom: 30%;
         left: 12%;
     }
-    .cannavaro{
+
+    .cannavaro {
         bottom: 30%;
     }
-    .puyol{
+
+    .puyol {
         bottom: 30%;
         right: 12%;
     }
-    .dinho{
+
+    .dinho {
         left: 9%;
     }
-    .beckham{
+
+    .beckham {
         right: 9%;
     }
-    .casillas{
+
+    .casillas {
         bottom: 8%;
     }
+
     .david_real_initial {
         top: 280px;
     }

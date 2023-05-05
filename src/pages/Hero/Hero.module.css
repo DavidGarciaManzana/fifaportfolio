@@ -140,7 +140,7 @@
     /*pointer-events: none;*/
     transition: opacity 1s ease-in-out;
     position: absolute;
-    bottom: -3px;
+    bottom: 4%;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
@@ -161,4 +161,12 @@
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 1024px) {
+    .backButtonAfterCv {
+
+        bottom: 1%;
+
+    }
 }
