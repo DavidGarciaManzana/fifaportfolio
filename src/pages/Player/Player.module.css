@@ -75,6 +75,29 @@
         bottom: -12px;
     }
 }
+@media only screen and (min-width: 768px) {
+    .playerImage {
+        height: 150px;
+    }
+    .baseImage {
+        height: 30px;
+        position: absolute;
+        bottom: -8px;
+        left: 28%;
+    }
+    .basePosition {
+        color: dodgerblue;
+        height: 25px;
+        position: absolute;
+        bottom: -6px;
+        left: 47px;
+        font-size: 20px;
+    }
+    .pele p {
+        left: 51.5px;
+        bottom: -6px;
+    }
+}
 .cr7 {
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -204,6 +227,41 @@
     }
     .casillas{
         bottom: 10%;
+    }
+    .david_real_initial {
+        top: 280px;
+    }
+
+    .david_real_initial {
+        right: 38%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cr7{
+        left: 13%;
+    }
+    .messi{
+        right: 13%;
+    }
+    .rc{
+        bottom: 30%;
+        left: 12%;
+    }
+    .cannavaro{
+        bottom: 30%;
+    }
+    .puyol{
+        bottom: 30%;
+        right: 12%;
+    }
+    .dinho{
+        left: 9%;
+    }
+    .beckham{
+        right: 9%;
+    }
+    .casillas{
+        bottom: 8%;
     }
     .david_real_initial {
         top: 280px;
