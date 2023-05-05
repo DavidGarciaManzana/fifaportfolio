@@ -4,11 +4,13 @@ import DownloadCvButton from "@/pages/DownloadCvButton/DownloadCvButton";
 import Player from "@/pages/Player/Player";
 import {SkipBack} from 'react-feather'
 import Button from "@/pages/Button/Button";
+import {useRouter} from "next/router";
 
 function Hero({fchangeState, fstate}) {
     const [fifaCardAnimationFinished, setFifaCardAnimationFinished] = React.useState(false);
     const [emptyCardAnimationFinished, setEmptyCardAnimationFinished] = React.useState(false);
-
+    const downloadRef = React.useRef(null);
+    const {locale} = useRouter();
     function handleAnimationEnd() {
         setFifaCardAnimationFinished(true);
     }
@@ -20,9 +22,13 @@ function Hero({fchangeState, fstate}) {
     function goBack() {
         location.reload();
     }
+    const handleDownload = () => {
+        downloadRef.current.click();
+    };
 
     return (
         <>
+            {locale==='en' ? <a ref={downloadRef} href="En_Cv_David_Garcia.pdf" download="En_Cv_David_Garcia"/>:<a ref={downloadRef} href="Es_Cv_David_Garcia.pdf" download="Es_Cv_David_Garcia"/>}
             <div className={`${fstate ? styles.heroContainerAfterCv : styles.heroContainer}`}>
                 <img className={`${fstate ? styles.imageBackgroundAfterCv : styles.imageBackground}`}
                      src="davidbg.png" alt=""/>
@@ -58,7 +64,7 @@ function Hero({fchangeState, fstate}) {
                 <Player position={'GK'} animationEnd={fifaCardAnimationFinished}
                         picture={'casillas_icon.png'} player={'casillas'}></Player>
 
-                <Player position={'CM'} animationEnd={emptyCardAnimationFinished}
+                <Player handleDownload={handleDownload} position={'CM'} animationEnd={emptyCardAnimationFinished}
                         picture={'garcia_small_toty.png'} player={'david_real_initial'} itsDavid={true}></Player>
 
 

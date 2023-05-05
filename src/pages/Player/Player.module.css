@@ -1,7 +1,6 @@
 .playerContainer {
     display: flex;
     flex-direction: column;
-    pointer-events: none;
 }
 
 .playerImage {
@@ -139,6 +138,7 @@
 }
 
 .david {
+    cursor: pointer;
     opacity: 1;
     transition: opacity 1s ease-in-out;
     transition-delay: 6.2s;
@@ -218,7 +218,7 @@
 
 .david_real_initial {
     opacity: 1;
-    pointer-events: none;
+    /*pointer-events: none;*/
 
     position: absolute;
     top: 150%;
@@ -251,6 +251,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .playerImage {
+        height: 175px;
+    }
     .cr7 {
         left: 13%;
     }
@@ -297,7 +300,10 @@
 .david_real_final {
     opacity: 1;
     transition: transform 2.5s cubic-bezier(0.1, 0.9, 0.2, 1);
-    pointer-events: none;
+    /*pointer-events: none;*/
+    /*border: 1px solid red;*/
+    /*z-index: 100;*/
+    cursor: pointer;
     position: absolute;
     top: 37%;
     right: 35%;
@@ -305,9 +311,14 @@
 
 }
 
+.david_real_final .pulsing {
+    /*cursor: pointer;*/
+}
+
 .pulsing {
     animation: pulse-animation 1s ease-in-out infinite;
     animation-delay: .5s;
+
 }
 
 @media only screen and (min-width: 425px) {
@@ -324,14 +335,17 @@
     0% {
         transform: scale(1);
         right: 19%;
+        /*cursor: pointer;*/
     }
     50% {
         transform: scale(1.05);
         right: 19%;
+        /*cursor: pointer;*/
     }
     100% {
         transform: scale(1);
         right: 19%;
+        /*cursor: pointer;*/
     }
 }
 
@@ -340,14 +354,17 @@
         0% {
             transform: scale(1);
             right: 26%;
+            /*cursor: pointer;*/
         }
         50% {
             transform: scale(1.1);
             right: 26%;
+            /*cursor: pointer;*/
         }
         100% {
             transform: scale(1);
             right: 26%;
+            /*cursor: pointer;*/
         }
     }
 }

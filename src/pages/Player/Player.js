@@ -9,20 +9,18 @@ function Player({
                     position,
                     animationEnd,
                     player, itsDavid = false,
+                    handleDownload=null,
                     ...delegated
                 }) {
     const playerRef = React.useRef(null);
     const audioRef = React.useRef(null);
     const [lastLittlePerk, setLastLittlePerk] = React.useState(false);
-    const downloadRef = React.useRef(null);
-    const {locale} = useRouter();
+
 
     function playSound() {
         audioRef.current.play();
     }
-    const handleDownload = () => {
-        downloadRef.current.click();
-    };
+
 
     React.useEffect(() => {
         const player = playerRef.current;
@@ -33,7 +31,7 @@ function Player({
         };
     }, [animationEnd])
     let atTheEnd = () => {
-        if (typeof functionAfterAnimation === "function"){
+        if (typeof functionAfterAnimation === "function") {
             functionAfterAnimation()
         }
         if (itsDavid) {
@@ -49,10 +47,13 @@ function Player({
             </audio>) : (<audio ref={audioRef}>
                 <source src='impact.mp3' type="audio/mp3"/>
             </audio>)}
-            <img className={`${styles.playerImage} ${lastLittlePerk ? styles.pulsing : ''}`} src={picture} alt=""/>
+            <img onClick={()=>{
+                console.log('aaaaaa');
+                handleDownload();
+            }} className={`${styles.playerImage} ${lastLittlePerk ? styles.pulsing : ''}`} src={picture} alt=""/>
             <img className={styles.baseImage} src='squadSlotBase.png' alt=""/>
             <p className={styles.basePosition}>{position}</p>
-            {locale==='en' ? <a ref={downloadRef} href="En_Cv_David_Garcia.pdf" download="En_Cv_David_Garcia"/>:<a ref={downloadRef} href="Es_Cv_David_Garcia.pdf" download="Es_Cv_David_Garcia"/>}
+
         </div>
     );
 }
