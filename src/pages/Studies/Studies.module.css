@@ -5,6 +5,13 @@
     border-radius: 25px;
 }
 
+
+@media only screen and (min-width: 425px) {
+    .studiesContainer{
+        min-width: 80%;
+    }
+}
+
 .studiesContainer h1 {
     font-size: 20px;
     font-weight: 600;
