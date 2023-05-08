@@ -5,3 +5,14 @@
     gap: 20px;
     max-width: 500px;
 }
+@media only screen and (min-width: 1024px) {
+    .projectsContainer {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        gap: 20px;
+        max-width: 900px;
+    }
+}
+
+
