@@ -48,7 +48,6 @@ function Player({
                 <source src='impact.mp3' type="audio/mp3"/>
             </audio>)}
             <img onClick={()=>{
-                console.log('aaaaaa');
                 handleDownload();
             }} className={`${styles.playerImage} ${lastLittlePerk ? styles.pulsing : ''}`} src={picture} alt=""/>
             <img className={styles.baseImage} src='squadSlotBase.png' alt=""/>
