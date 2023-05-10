@@ -59,6 +59,11 @@ function TechStack() {
                         src="https://camo.githubusercontent.com/adfd8188c10cefc9545f6582f980e80953d0f57a559c4b5e2214a956a7b08489/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2e4e45542d3531324244343f7374796c653d666f722d7468652d6261646765266c6f676f3d646f746e6574266c6f676f436f6c6f723d7768697465"
                         alt=""/>
                 </a>
+                <a href="https://vercel.com/" target="_blank">
+                    <img
+                        src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"
+                        alt=""/>
+                </a>
 
             </div>
             <h1 className={styles.title}>{t?.techTitle2}</h1>
