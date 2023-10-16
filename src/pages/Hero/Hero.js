@@ -28,7 +28,7 @@ function Hero({fchangeState, fstate}) {
 
     return (
         <>
-            {locale==='en' ? <a ref={downloadRef} href="En_Cv_David_Garcia.pdf" download="En_Cv_David_Garcia"/>:<a ref={downloadRef} href="Es_Cv_David_Garcia.pdf" download="Es_Cv_David_Garcia"/>}
+            {locale==='en' ? <a ref={downloadRef} href="En_Cv_David_Garcia.pdf" download="En_Cv_David_Garcia"/>:<a ref={downloadRef} href="En_Cv_David_Garcia.pdf" download="En_Cv_David_Garcia"/>}
             <div className={`${fstate ? styles.heroContainerAfterCv : styles.heroContainer}`}>
                 <img className={`${fstate ? styles.imageBackgroundAfterCv : styles.imageBackground}`}
                      src="davidbg.png" alt=""/>
