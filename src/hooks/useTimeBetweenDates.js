@@ -13,7 +13,12 @@ function useTimeBetweenDates(initialDate, endingDate) {
     if (years === 0) {
         return `${months} ${t?.months}`;
     } else {
-        return `${years} ${t?.year}${years > 1 ? 's' : ''} ${t?.and} ${months % 12} ${t?.month}${months % 12 > 1 ? t?.pluralMonth : ''}`;
+        if(months === 12 ){
+            return `${years} ${t?.year}${years > 1 ? 's' : ''} `;
+
+        } else {
+            return `${years} ${t?.year}${years > 1 ? 's' : ''} ${t?.and} ${months % 12} ${t?.month}${months % 12 > 1 ? t?.pluralMonth : ''}`;
+        }
     }
 }
 

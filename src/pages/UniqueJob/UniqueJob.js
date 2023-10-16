@@ -3,7 +3,7 @@ import styles from '@/pages/UniqueJob/UniqueJob.module.css'
 import useTimeBetweenDates from "@/hooks/useTimeBetweenDates";
 import {LanguageContext} from "@/pages/LanguageProvider/LanguageProvider";
 
-function UniqueJob({picture, role, place, startingDate, endDate = '', children}) {
+function UniqueJob({picture, role, place, startingDate, endDate = '', children,picClassName=''}) {
     const {t} = React.useContext(LanguageContext);
 
 //startingDate and endDate must be in format 'Apr 2022'
@@ -20,7 +20,7 @@ function UniqueJob({picture, role, place, startingDate, endDate = '', children})
         <div className={styles.uniqueJobContainer}>
 
             <div className={styles.imageContainer}>
-                <img src={picture} alt=""/>
+                <img src={picture} alt="" className={picClassName}/>
             </div>
 
             <div className={styles.textContainer}>
